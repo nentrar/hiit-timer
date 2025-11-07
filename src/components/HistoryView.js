@@ -36,7 +36,7 @@ const HistoryView = ({ workouts, onBack, onRun }) => {
             <div key={date}>
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm text-gray-500">{date === today ? 'Today' : date}</h3>
-                <span className="text-2xl font-bold">{dayWorkouts.reduce((sum, w) => sum + w.totalTime, 0)}s</span>
+                {/* <span className="text-2xl font-bold">{dayWorkouts.reduce((sum, w) => sum + w.totalTime, 0)}s</span> */}
               </div>
               {dayWorkouts.map((workout, idx) => (
                 <div key={`${date}-${idx}`} className="border-2 border-black rounded-2xl p-5 mb-3">
