@@ -237,7 +237,7 @@ const ActiveWorkout = ({ settings, onComplete, onStop }) => {
           {phase === 'warmup' ? 'Warm-up' : phase === 'work' ? 'Work' : phase === 'rest' ? 'Rest' : 'Round Rest'}
         </div>
         {phase !== 'warmup' && (
-          <div className={`text-xl ${colors.label} space-y-2`}>
+          <div className={`text-3xl ${colors.label} space-y-2`}>
             <div>
               <span className={`${colors.text} font-medium`}>Exercise </span>
               {currentExercise}/{settings.exercises}
